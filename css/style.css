@@ -1,0 +1,230 @@
+/*variables*/
+/*variables*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background-color: mistyrose; }
+
+/* titulo */
+h1 {
+  color: deeppink;
+  margin: 25px; }
+
+h1:hover {
+  transform: scaleY(0.5); }
+
+.titulo__tipografia {
+  font-family: 'Satisfy', cursive; }
+
+/*subtitulos/ encabezado de listas*/
+h2 {
+  margin-top: 30px;
+  color: red;
+  font-family: 'Fleur De Leah', cursive; }
+
+/*header*/
+header {
+  position: sticky;
+  top: 2;
+  z-index: 2;
+  background-image: linear-gradient(to top, blanchedalmond, peachpuff, mistyrose, papayawhip, lightpink); }
+  header .header__contenedorMenu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 2px;
+    margin-left: 100px;
+    padding-top: 20px; }
+    header .header__contenedorMenu .header__contenedorMenuLi {
+      color: dimgrey;
+      font-family: 'Passion One', cursiva; }
+      header .header__contenedorMenu .header__contenedorMenuLi .header__contenedorMenuLi--item {
+        text-decoration: none;
+        color: dimgray;
+        font-family: 'Satisfy', cursive;
+        font-size: medium; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  text-decoration: none;
+  margin-left: 20px; }
+
+/*footer*/
+footer {
+  color: deeppink;
+  position: sticky;
+  margin-left: 100px; }
+
+/*main*/
+.container {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas: "texto imagen " "texto imagen " "texto imagen";
+  margin: 20px; }
+
+/*texto*/
+.texto {
+  display: grid;
+  grid-area: texto;
+  padding-top: 150px;
+  padding-bottom: 700px;
+  margin-left: 150px; }
+
+.texto {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: large; }
+
+h3 {
+  color: black; }
+
+/*imagen*/
+.imagen {
+  display: grid;
+  grid-area: imagen; }
+
+/*secciones*/
+/*bebidas*/
+.main_contBebidas {
+  display: grid;
+  grid-template-columns: 700px 400px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "listaBebidas imgBebida " "listaBebidas imgBebida " "listaBebidas imgBebida";
+  margin: 20px; }
+
+.imgBebida {
+  display: grid;
+  grid-area: imgBebida;
+  margin-left: 150px; }
+
+.listaBebidas {
+  display: grid;
+  grid-area: listaBebidas;
+  padding-top: 20px;
+  padding-bottom: 600px;
+  margin-left: 10px;
+  font-family: 'Fleur De Leah', cursive; }
+  .listaBebidas h2 {
+    color: red;
+    font-family: oblique; }
+
+.card-text {
+  font-family: 'Satisfy', cursive;
+  color: grey; }
+
+/*desayunos*/
+.main_contBrunch {
+  display: grid;
+  grid-template-columns: 700px 400px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "listaDesayunos imgBrunch" "listaDesayunos imgBrunch" "listaDesayunos imgBrunch";
+  margin: 20px; }
+
+.imgBrunch {
+  display: grid;
+  grid-area: imgBrunch;
+  margin-left: 150px; }
+
+.listaDesayunos {
+  display: grid;
+  grid-area: listaDesayunos;
+  padding-top: 20px;
+  padding-bottom: 600px;
+  margin-left: 10px;
+  font-family: 'Fleur De Leah', cursive; }
+
+h2 {
+  color: red;
+  font-family: oblique; }
+
+/*cafeteria*/
+.main_contCafe {
+  display: grid;
+  grid-template-columns: 700px 400px;
+  grid-template-rows: 200px 200px 100px;
+  grid-template-areas: "tablaCafe imgCafe " "tablaCafe imgCafe " "tablaCafe imgCafe";
+  margin: 20px; }
+  .main_contCafe .imgCafe {
+    display: grid;
+    grid-area: imgCafe;
+    margin-left: 150px; }
+    .main_contCafe .imgCafe .tablaCafe {
+      display: grid;
+      grid-area: tablaCafe;
+      margin-left: 150px;
+      color: #ff149d; }
+
+.variedadCafe {
+  color: red;
+  margin-left: 20px; }
+
+/*formulario contacto*/
+.contacto {
+  display: grid;
+  grid-template-columns: 700px  700px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "formulario imgContacto" "formulario imgContacto" "formulario imgContacto";
+  margin: 20px; }
+
+.formulario {
+  display: grid;
+  grid-area: formulario;
+  margin-left: 150px; }
+
+.imgContacto {
+  display: grid;
+  grid-area: imgContacto;
+  margin-left: 150px; }
+
+/*escritorio*/
+/*tablet*/
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  body {
+    background-color: papayawhip; }
+  /*
+main{
+    grid-template-areas: 
+    "imagen imagen "
+    "imagen imagen "
+    "imagen imagen";
+     margin: 10px;
+     display: grid;
+     justify-items: stretch;
+     align-items: stretch;
+  
+
+}  
+.texto{
+    display: none;
+}  */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; }
+  /*mobile*/ }
+
+@media only screen and (max-width: 767px) and (min-width: 321px) and (max-width: 320px) {
+  body {
+    background-color: plum; }
+  main {
+    grid-template-areas: "imagen imagen " "imagen imagen " "imagen imagen";
+    margin: 10px;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch; }
+  .texto {
+    display: none; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; } }
