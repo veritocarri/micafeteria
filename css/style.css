@@ -187,44 +187,21 @@ h2 {
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   body {
     background-color: papayawhip; }
-  /*
-main{
-    grid-template-areas: 
-    "imagen imagen "
-    "imagen imagen "
-    "imagen imagen";
-     margin: 10px;
-     display: grid;
-     justify-items: stretch;
-     align-items: stretch;
-  
-
-}  
-.texto{
-    display: none;
-}  */
-  .menu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch; }
-  /*mobile*/ }
-
-@media only screen and (max-width: 767px) and (min-width: 321px) and (max-width: 320px) {
-  body {
-    background-color: plum; }
-  main {
-    grid-template-areas: "imagen imagen " "imagen imagen " "imagen imagen";
-    margin: 10px;
-    display: grid;
-    justify-items: stretch;
-    align-items: stretch; }
-  .texto {
-    display: none; }
-  .menu {
+  .header__contenedorMenu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch; } }
+
+/*mobile*/
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: plum; } }
+
+.header__contenedorMenu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; }
