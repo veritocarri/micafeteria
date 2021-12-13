@@ -17,7 +17,7 @@ h1:hover {
   transform: scaleY(0.5); }
 
 .titulo__tipografia {
-  font-family: 'Satisfy', cursive; }
+  font-family: 'Fleur De Leah'; }
 
 /*subtitulos/ encabezado de listas*/
 h2 {
@@ -46,6 +46,9 @@ header {
         font-family: 'Satisfy', cursive;
         font-size: medium; }
 
+.btn-group {
+  margin-left: 2%; }
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -57,32 +60,59 @@ header {
 
 /*footer*/
 footer {
-  color: deeppink;
+  background-color: gray;
   position: sticky;
-  margin-left: 100px; }
+  height: 15%;
+  margin-bottom: 0rem; }
+
+.contDer p {
+  margin-bottom: 0rem; }
+
+.contInfo p {
+  margin-bottom: 0rem; }
+
+.contInfo {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  margin-left: 20px; }
+
+.contDer {
+  text-align: center; }
 
 /*main*/
 .container {
   display: grid;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 400px 400px 400px;
-  grid-template-areas: "texto imagen " "texto imagen " "texto imagen";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas: "texto imagen " "texto imagen " "texto imagen" "granosCafe cafeHum " "tuestaCafe cafeHum";
   margin: 20px; }
 
 /*texto*/
 .texto {
   display: grid;
   grid-area: texto;
-  padding-top: 150px;
-  padding-bottom: 700px;
-  margin-left: 150px; }
+  padding-top: 100px;
+  padding-bottom: 200px;
+  margin-left: 100px; }
 
 .texto {
-  font-family: 'Fleur De Leah', cursive;
-  font-size: large; }
+  font-family: 'Satisfy', cursive; }
 
-h3 {
-  color: black; }
+h5 {
+  color: grey; }
+
+.granosCafe {
+  margin-left: 100px;
+  font-family: 'Satisfy', cursive;
+  padding-top: 5%; }
+
+.tuesteCafe {
+  font-family: 'Satisfy', cursive;
+  padding-top: 5%; }
+
+.cafeHum {
+  padding-top: 5%; }
 
 /*imagen*/
 .imagen {
@@ -96,7 +126,8 @@ h3 {
   grid-template-columns: 700px 400px;
   grid-template-rows: 200px 200px 200px;
   grid-template-areas: "listaBebidas imgBebida " "listaBebidas imgBebida " "listaBebidas imgBebida";
-  margin: 20px; }
+  margin: 20px;
+  margin-bottom: 5%; }
 
 .imgBebida {
   display: grid;
@@ -109,7 +140,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 600px;
   margin-left: 10px;
-  font-family: 'Fleur De Leah', cursive; }
+  font-family: 'Satisfy', cursive; }
   .listaBebidas h2 {
     color: red;
     font-family: oblique; }
@@ -118,13 +149,17 @@ h3 {
   font-family: 'Satisfy', cursive;
   color: grey; }
 
+.card {
+  background-color: mistyrose; }
+
 /*desayunos*/
 .main_contBrunch {
   display: grid;
   grid-template-columns: 700px 400px;
   grid-template-rows: 200px 200px 200px;
   grid-template-areas: "listaDesayunos imgBrunch" "listaDesayunos imgBrunch" "listaDesayunos imgBrunch";
-  margin: 20px; }
+  margin: 20px;
+  margin-bottom: 5%; }
 
 .imgBrunch {
   display: grid;
@@ -137,7 +172,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 600px;
   margin-left: 10px;
-  font-family: 'Fleur De Leah', cursive; }
+  font-family: 'Satisfy', cursive; }
 
 h2 {
   color: red;
@@ -146,19 +181,20 @@ h2 {
 /*cafeteria*/
 .main_contCafe {
   display: grid;
-  grid-template-columns: 700px 400px;
-  grid-template-rows: 200px 200px 100px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: repeat(3 1fr);
   grid-template-areas: "tablaCafe imgCafe " "tablaCafe imgCafe " "tablaCafe imgCafe";
-  margin: 20px; }
+  margin: 2%;
+  margin-bottom: 10%; }
   .main_contCafe .imgCafe {
     display: grid;
-    grid-area: imgCafe;
-    margin-left: 150px; }
+    grid-area: imgCafe; }
     .main_contCafe .imgCafe .tablaCafe {
       display: grid;
       grid-area: tablaCafe;
       margin-left: 150px;
-      color: #ff149d; }
+      color: #ff149d;
+      padding-bottom: 20%; }
 
 .variedadCafe {
   color: red;
@@ -170,7 +206,8 @@ h2 {
   grid-template-columns: 700px  700px;
   grid-template-rows: 200px 200px 200px;
   grid-template-areas: "formulario imgContacto" "formulario imgContacto" "formulario imgContacto";
-  margin: 20px; }
+  margin: 20px;
+  margin-bottom: 5%; }
 
 .formulario {
   display: grid;
@@ -187,6 +224,12 @@ h2 {
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   body {
     background-color: papayawhip; }
+  main {
+    grid-template-areas: "imagen imagen " "texto texto";
+    margin: 10px;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch; }
   .header__contenedorMenu {
     display: flex;
     flex-direction: column;
@@ -197,11 +240,16 @@ h2 {
 /*mobile*/
 @media only screen and (max-width: 320px) {
   body {
-    background-color: plum; } }
-
-.header__contenedorMenu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch; }
+    background-color: pink; }
+  .container {
+    grid-template-areas: "imagen imagen" "texto texto" "granosCafe granosCafe" "tuesteCafe tuesteCafe" "footer footer";
+    width: 100%; }
+  .cafeHum {
+    display: none; }
+  .main_contCafe {
+    grid-template-areas: "imgCafe imgCafe" "imgCafe imgCafe" "footer footer";
+    width: 100%; }
+  .tablaCafe {
+    display: none; }
+  .variedadCafe {
+    display: none; } }
