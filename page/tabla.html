@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
     <meta name="keywords"content="Café, Cafetería, Desayunos, Brunch, Pastelería, Especialidad, Café Especialidad, Macarons">
     <meta name="description" content="Cafetería de especialidad y pastelería francesa del mas alto nivel">
@@ -18,29 +21,38 @@
     <header>
 
 
-        <div class="header__contenedor">
-            <ul class="header__contenedorMenu"></a></li>
+      
+
+        
+        <h1 class="titulo__tipografia"><strong>Carmela Café & Café </strong></h1> 
 
 
-                <li class="header__contenedorMenuLi"><a class="header__contenedorMenuLi--item"
-                        href="../index.html">Home</a></li>
-                <li class="header__contenedorMenuLi"><a class="header__contenedorMenuLi--item"
-                        href="./lista2.html">Desayunos yBrunch</a></li>
-                <li class="header__contenedorMenuLi"><a class="header__contenedorMenuLi--item"
-                        href="./lista.html">Bebidas</a></li>
-                <li class="header__contenedorMenuLi"><a class="header__contenedorMenuLi--item"
-                        href="./tabla.html">Cafetería</a></li>
-                <li class="header__contenedorMenuLi"><a class="header__contenedorMenuLi--item"
-                        href="./form2.html">Contacto</a></li>
-
-            </ul>
+        
+        <div class="header_contenedorMenu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="./lista.html">Bebidas <span class="sr-only"></span></a>
+                <a class="nav-item nav-link" href="./lista2.html">Desayunos/Brunch</a>
+                <a class="nav-item nav-link" href="./tabla.html">Cafetería</a>
+                <a class="nav-item nav-link " href="./form2.html">Contacto</a>
+              </div>
+            </div>
+          </nav>
         </div>
 
-        </div>
-        <h1 class="titulo__tipografia"> Carmela Café & Café</h1>
-        </div>
 
 
+
+
+
+
+
+   
 
     </header>
 
@@ -52,7 +64,7 @@
 
 
             <div class="card" style="width: 16rem;">
-                <img src="../media/image (12) (1).png" class="card-img-top" alt="imagen brunch">
+                <img src="../media/image (12) (1).png" class="card-img-top" alt="imagen variedad de cafe">
                 <div class="card-body">
                     <p class="card-text">Disponemos de los mejores granos de café molidos artesanalmente y con tueste
                         propio, al punto apropiado
@@ -66,70 +78,56 @@
 
         </div>
 
-        <h2 class="variedadCafe">Nuestros cafés de especialidad</h2>
-
-
+        
         <div class="tablaCafe">
 
-            <table class="cafe" border="1px" cellspacing="15px" cellspacing="15px">
+            <div>
+                <h4>Nuestros cafés de especialidad</h4>
+            </div>
+
+            <div>
+                <h5>*<strong>Ristretto:</strong> Café expreso corto</h5>
+                <h5>*<strong>Americano:</strong> Café largo</h5>
+                <h5>*<strong>Doppio:</strong> Café expreso largo con doble carga</h5>
+                <h5>*<strong>Macchiato:</strong>Apenas cortado con leche espumada</h5>
+                <h5>*<strong>Moca:</strong> 1/3 expreso y 2/3 de leche vaporizada </h5>
+                <h5>**con agregado de chocolate espeso de la casa**</h5>
+                <h5>*<strong>Latte:</strong>1/3 expreso y 2/3 de leche vaporizada</h5>
+                <h5>** con un cm de espuma de leche **</h5>
+                <h5>*<strong>Capuchino:</strong> Café expreso con leche montada a vapor </h5>
+                <h5>**para darle cremosidad, extra de cacao o canela**</h5>
+                <h5>*<strong>Flat White:</strong> Latte corto con espuma extra</h5>
+                <h5>*<strong>Vienés:</strong> Café expreso cubierto con crema batida</h5>
 
 
-                <tr>
-                    <th>
+
+                <h4>Opcionales Veganos</h4>
 
 
-                    <th>Especialidad</th>
-                    <th>Porcentaje Leche</th>
-                    <th>Porcentaje de cafe</th>
-                    <th>Opcional vegano</th>
+                <h5>*<strong>Leche de Almendras</strong></h5>
+                <h5>*<strong>Leche de Avena</strong></h5>
+                <h5>*<strong>Leche de castañas de Cajú</strong></h5>
+                <h5>*<strong>Leche de soja</strong></h5>
+            
 
+            </div>
 
-                    </th>
-                </tr>
-                <tr>
-
-                    <td>Americano</td>
-                    <td>Arabica</td>
-                    <td>0%</td>
-                    <td>100%</td>
-                    <td>Es vegano</td>
-
-
-                </tr>
-                <tr>
-                    <td>Mascciato</td>
-                    <td>Arabica</td>
-                    <td>5%</td>
-                    <td>95%</td>
-                    <td>leche de avena</td>
-                </tr>
-                <tr>
-                    <td>Latte</td>
-                    <td>Robusta</td>
-                    <td>95%</td>
-                    <td>5%</td>
-                    <td>leche de coco/almendras</td>
-                </tr>
-                <tr>
-                    <td>Capuchino</td>
-                    <td>Arabica</td>
-                    <td>60%</td>
-                    <td>40%</td>
-                    <td>leche de avena/cajú</td>
-                </tr>
-                <tr>
-                    <td>Expresso</td>
-                    <td>Arabica</td>
-                    <td>100%</td>
-                    <td>No</td>
-                    <td>Es vegano</td>
-                </tr>
-            </table>
 
         </div>
 
-    </main>
 
+
+
+
+
+
+
+
+
+
+
+
+    </main>
     
     
 
@@ -151,7 +149,11 @@
 
 
       
-       </footer>
+    </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+       crossorigin="anonymous"></script>
+
      
 </body>
 
